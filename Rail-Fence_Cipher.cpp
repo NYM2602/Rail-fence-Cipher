@@ -1,3 +1,9 @@
+//This is a program to cipher and decipher using the rail-fence cipher
+//Rail-fence cipher is a simple shuffeling cipher that chooses a key
+//that is the number of rows or rails and arranges the message in a zigzag pattern
+//it then takes the letters starting with the first row
+//You can choose the key to use for the cipher
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -27,7 +33,7 @@ int main()
             getline(cin,txt);
             //input the cipher key and validate that it is a number
             while (true){
-                cout<<"Please enter the key of the Rail-Fence Cipher that is 3 or more:"<<endl;
+                cout<<"Please enter the key of the Rail-Fence Cipher that is 2 or more:"<<endl;
                 string key_str;
                 cin>>key_str;
                 cin.get();//prevent error from the newline character
@@ -50,7 +56,7 @@ int main()
             //input the cipher key and validate that it is a number
             int key;
             while (true){
-                cout<<"Please enter the key of the Rail-Fence Cipher that is 3 or more:"<<endl;
+                cout<<"Please enter the key of the Rail-Fence Cipher that is 2 or more:"<<endl;
                 string key_str;
                 cin>>key_str;
                 cin.get(); //prevent error from the newline character
